@@ -5,6 +5,7 @@ Main application entry point
 
 import os
 import sys
+sys.path.insert(0, os.getcwd())
 import logging
 import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton
@@ -458,4 +459,5 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         print("Bot stopped by user")
+
 
